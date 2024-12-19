@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: white;
+}
+.scroll-container {
+    display: flex;
+    width: 300vw;
+    height: 100vh;
+    align-items: center;
+}
+.line {
+    width: 80vw;
+    height: 2px;
+    background-color: orange;
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    position: relative;
+}
+.divider {
+    width: 2px;
+    height: 20px;
+    background-color: black;
+}
+
+.line .divider:nth-child(1) {
+    grid-column: 2;
+}
+.line .divider:nth-child(2) {
+    grid-column: 3;
+}
+.line .divider:nth-child(3) {
+        grid-column: 4;
+}
+.line .divider:nth-child(4) {
+    grid-column: 5;
+}
+.line .divider:nth-child(5) {
+        grid-column: 6;
+}
